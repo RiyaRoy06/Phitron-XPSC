@@ -18,7 +18,7 @@ int main()
             }
         for(ll i=0;i<m.size()-1;i++)
             {
-              if(s[i]=='X') y++;
+              if(m[i]=='X') y++;
             }
         if(s[s.size()-1]=='S'){
         if(m[m.size()-1]=='S')
@@ -32,6 +32,8 @@ int main()
         else if(s[s.size()-1]=='M'){
             if(m[m.size()-1]=='S')
                 cout<<">"<<"\n";
+            else if(m[m.size()-1]=='M')
+            cout<<"="<<"\n";
             else cout<<"<"<<"\n";
         }
         else{
